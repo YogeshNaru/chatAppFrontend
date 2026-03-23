@@ -238,7 +238,7 @@ export default function Homepage() {
                       <img
                         src={msg.image}
                         alt="chat-img"
-                        className="mt-2 rounded-lg max-w-[200px]"
+                        className="mt-2 rounded-lg max-w-[280px]"
                       />
                     )}
                     <span className="block text-xs  mt-1 py-1 text-right">
