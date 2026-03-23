@@ -233,6 +233,14 @@ export default function Homepage() {
                       {msg.sender._id === userId ? "You" : msg.sender.userName}
                     </strong>
                     {msg.message}
+
+                    {msg.image && (
+                      <img
+                        src={msg.image}
+                        alt="chat-img"
+                        className="mt-2 rounded-lg max-w-[200px]"
+                      />
+                    )}
                     <span className="block text-xs  mt-1 py-1 text-right">
                       {new Date(msg.createdAt).toLocaleTimeString([], {
                         day: "2-digit",
